@@ -19,9 +19,9 @@ $(NAME_S):
 	$(CC) $(CFLAGS) -o $(NAME_S) $(SRC_S)
 
 clean:
+	@rm -f $(NAME_C) $(NAME_G) $(NAME_S)
 
 fclean: clean
-	@rm -f $(NAME_C) $(NAME_G) $(NAME_S)
 
 re: fclean all
 
